@@ -1,0 +1,93 @@
+# IndieWebTech — Task Checklist
+
+- [x] Confirm scope with stakeholder; align on primary goal (marketing site + lead gen) and any additional asks.
+- [ ] Capture brand assets (logo, colors, typography preferences) or define temporary placeholders.
+- [ ] Identify target audiences and key value props to emphasize.
+- [ ] Map required pages/IA (Home, Services, Portfolio/Case Studies, About, Blog/News, Contact, Legal).
+- [ ] Collect content owners and timelines for copy, imagery, and case studies.
+- [ ] Decide on CMS/content strategy (headless CMS vs. structured files) and get approval.
+- [ ] Confirm lead capture needs (fields, validation, routing, success state, notifications).
+- [ ] Confirm booking/meeting link strategy (Calendly/Cal.com/static calendar link) if needed.
+- [ ] Decide analytics/consent requirements (GA, Plausible, no tracking).
+- [ ] Choose hosting/deployment target and environments (preview vs. production).
+
+- [ ] Draft architecture/approach brief with stack choice and hosting plan; share for sign-off.
+- [ ] Define environment variables and secrets needed (API keys, email, analytics).
+- [x] Choose styling system (Tailwind v4) and component approach.
+- [x] Define content model for pages, services, portfolio items, and blog posts.
+- [x] Decide navigation/footer structure and global layout elements.
+- [ ] Choose form handling and email delivery mechanism (provider or self-hosted endpoint).
+- [ ] Plan for asset handling (images/og images) and optimization pipeline.
+- [ ] Decide on head/SEO strategy (per-page meta, OG, sitemap, robots).
+- [ ] Outline testing approach (unit/smoke/e2e) and pick tools.
+- [ ] Create initial milestone plan and prioritize MVP vs. nice-to-have features.
+
+- [x] Initialize the project repo with chosen framework and lint/format config.
+- [x] Add base README with run/test/build instructions (update as work progresses).
+- [ ] Set up TypeScript strictness and path aliases if applicable.
+- [ ] Configure linting/formatting (ESLint, Prettier, stylelint if needed).
+- [ ] Add basic CI config placeholder (format/lint/test) or notes for later.
+- [x] Implement global layout shell (header, footer, nav, theme tokens).
+- [x] Create typography/color/spacing tokens and reusable UI primitives.
+- [x] Define responsive grid/layout utilities for sections.
+- [x] Add 404 fallback pages with navigation back to main flows.
+- [ ] Wire global loading/error boundaries if framework supports them.
+
+- [x] Home page: hero with clear CTA, services summary, proof elements, and lead CTA.
+- [x] Services page: structured service cards/sections with pricing cues and CTA.
+- [x] Portfolio/Case Studies: template for multiple entries with results/metrics slots.
+- [x] About page: company story, team highlights (if provided), and credibility signals.
+- [x] Blog/News index: list view with tags/date/preview text.
+- [x] Blog post template: rich text, images, code blocks if needed, social/share meta (placeholder copy).
+- [x] Contact page: lead form, map/region note if relevant, alternate contact info.
+- [x] Legal pages placeholders (Privacy, Terms) with links in footer.
+- [ ] Navigation/footer: active states, mobile menu, contact CTA surfaced.
+- [ ] Add structured data where applicable (Organization, BreadcrumbList, BlogPosting).
+- [ ] Set up sitemap generation and robots.txt with environment-aware rules.
+
+- [x] Implement content source (structured data files) for all page types.
+- [x] Seed sample content and ensure templates render from data, not hard-coded.
+- [x] Build CTA components (buttons, links) with variants and accessibility states.
+- [x] Implement cards/sections for services, proof points, and testimonials.
+- [x] Add testimonials or placeholder slots; wire to data model.
+- [x] Add feature for spotlight metrics/achievements with icons.
+- [x] Implement reusable section components with optional media and list slots.
+- [ ] Ensure mobile responsiveness across breakpoints; test common devices.
+- [ ] Add scroll/route transition polish if aligned with brand (respect performance).
+- [ ] Add favicon, app icons, and social preview image generation/handling.
+- [ ] Integrate analytics snippet with consent handling (if required).
+- [ ] Add cookie/consent banner if tracking requires it.
+- [ ] Implement error logging hooks (e.g., console/error boundary) as appropriate.
+- [ ] Harden form validation and user feedback states (pending, success, error).
+- [ ] Add rate limiting or bot protection to forms if needed (honeypot/captcha strategy).
+- [ ] Wire email/notification delivery for lead submissions; store leads if required.
+- [ ] Add thank-you page or inline success state with follow-up CTA (e.g., booking link).
+- [ ] Verify booking/meeting link flow from CTA to destination.
+- [ ] Add lightweight admin/editor notes on how to add content (CMS or files).
+- [ ] Ensure content model supports future localization/expansion (structure over copy).
+- [ ] Add accessibility checks to components (focus states, ARIA where needed).
+- [ ] Run automated accessibility lint/checks if available.
+- [ ] Optimize images and media loading (responsive sizes, lazy loading).
+- [ ] Tune performance budgets; check Core Web Vitals locally (LCP/CLS/INP proxies).
+- [ ] Set meta tags for each page (title/description/OG/Twitter); verify with sample data.
+- [ ] Ensure canonical URLs and proper link rels; avoid duplicate content.
+
+- [ ] Write unit tests for critical utilities/components.
+- [ ] Add smoke tests for key pages rendering.
+- [ ] Add e2e tests for core journeys (home → services → contact submission).
+- [ ] Add e2e for blog navigation and post rendering.
+- [ ] Add e2e for lead form submission success and error handling.
+- [ ] Document how to run tests locally and in CI.
+
+- [ ] Prepare deployment configuration for chosen host (commands, env vars, build output).
+- [ ] Create production build and validate locally.
+- [ ] Set up preview environment workflow if supported.
+- [ ] Add monitoring/uptime/error tracking recommendations (even if optional).
+- [ ] Validate environment variable handling and secret management instructions.
+
+- [ ] Write final README updates with stack choice, scripts, and deployment steps.
+- [ ] Add OPERATIONS/HANDOFF notes (env vars, accounts, integrations, content model).
+- [ ] Summarize decisions and trade-offs made during build.
+- [ ] Note open issues, deferred items, and future improvements.
+- [ ] Confirm all links/forms/CTAs point to correct destinations.
+- [ ] Final pass for accessibility, performance, and SEO checklists; capture results.
